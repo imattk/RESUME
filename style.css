@@ -203,4 +203,8 @@
   img {
     width: 30rem;
     height: 10rem;
-  
+      
+      #mypic{
+      width: inherit;
+          hight: inherit;
+      }
