@@ -1,0 +1,206 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+  }
+  body{
+    font-family: montserrat;
+  }
+  nav{
+    background: #232629;
+    height: 80px;
+    width: 100%;
+  }
+  label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+  }
+  nav ul{
+    float: right;
+    margin-right: 20px;
+  }
+  nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+  nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+  }
+  a:hover{
+    background: #9e9d5b;
+    transition: .5s;
+  }
+  .checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+  @media (max-width: 952px){
+    label.logo{
+      font-size: 30px;
+      padding-left: 50px;
+    }
+    nav ul li a{
+      font-size: 16px;
+    }
+  }
+  @media (max-width: 858px){
+    .checkbtn{
+      display: block;
+    }
+    ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background:#232629;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+    }
+    nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+    nav ul li a{
+      font-size: 20px;
+    }
+    a:hover{
+      z-index: 1;
+      background: none;
+      color:#9e9d5b;
+    }
+    #check:checked ~ ul{
+      left: 0;
+    }
+  }
+
+  h1{
+      text-align: center;
+      justify-content: center;
+      float: inherit;
+      display: flex;
+      font-weight: bold;
+      font-size: 50px;
+      min-height: 50vh;
+      padding: 0;
+      margin-bottom: 100px;
+     color: rgb(223, 226, 178);
+     position: relative;
+     overflow: hidden;
+     font-family: 'Syncopate', sans-serif;
+     color: #dfc4a4;
+     text-transform: uppercase;
+     letter-spacing: 3vw;
+     line-height: 1.2;
+     font-size: 3vw;
+     text-align: center;
+     padding-bottom: 0;
+  }
+
+.sp {
+    display: block;
+    font-size: 10vw;
+    letter-spacing: -1.3vw;
+  }
+  .myname{
+    position: relative;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .video-back {
+     position: absolute;
+     object-fit: cover;
+      min-width: 100%;
+      min-height: 100%;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      float: inherit;
+  }
+
+  h2{
+    font-family: 'Syncopate', sans-serif;
+     color: #dfc4a4;
+     text-transform: uppercase;
+     letter-spacing: 3vw;
+     line-height: 1.2;
+     font-size: 3vw;
+     text-align: center;
+     background-color: #232629;
+     padding-top: 2.5rem;
+     padding-bottom: 2.5rem;
+  }
+  p {
+    padding-bottom: 50px;
+    font-size: 1.5rem;
+    font-family: 'syncopate', sans-serif;
+    padding-top: 50px;
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+  .paragraph {
+    padding-bottom: 50px;
+    font-size: 1.5rem;
+    font-family: 'syncopate', sans-serif;
+    padding-top: 50px;
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+  .paragraph a:hover{
+    color: rgb(223, 226, 178);
+  }
+  .me {
+    line-height: 2;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  .skills {
+    padding-bottom: 50px;
+    font-size: 1.5rem;
+    font-family: 'syncopate', sans-serif;
+    padding-top: 50px;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    line-height: 2;
+  }
+  .contact {
+    padding-bottom: 50px;
+    font-size: 1.5rem;
+    font-family: 'syncopate', sans-serif;
+    padding-top: 50px;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    line-height: 1.8;
+  }
+  .html-css-js-python-logo {
+    float: right;
+    border-radius: .5;
+    height: 50px;
+    width: 10px;
+  }
+  img {
+    width: 30rem;
+    height: 10rem;
+  
