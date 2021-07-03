@@ -1,63 +1,81 @@
 <!DOCTYPE html>
+
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Matthew Krebs</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-    
-  </head>
-  <body>
-    <nav>
-      <input type="checkbox" id="check">
-      <label for="check" class="checkbtn">
-        <i class="fas fa-bars"></i>
-      </label>
-      <label class="logo">MK</label>
-      <ul>
-        <li><a class="active" href="#">Home</a></li>
-        <li><a href="#About-me">About Me</a></li>
-        <li><a href="#Education">Education</a></li>
-        <li><a href="#work history">Work History</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact Info</a></li>
-      </ul>
-    </nav>
-    
-    <h1 class="myname">Matthew
-        <div></div>
-        <span class="sp">Krebs</span>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Matthew Krebs</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <!-- CSS only BootStrap (assuming that the bootstrap server is up, do not rely on bootstrap all the time) -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    </head>
+    <body>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">MK</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">About Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Education</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Work History</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown link
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+<section>
+<h1 class="myname">Matthew
+            <span class="sp">Krebs</span>
     <video class="video-back" autoplay muted loop>
-        <source src="Snow - 2509.mp4" type="video/mp4">
-    </video>
-  </section>
-</h1>
-<section id="About-me">
-  <h2>About Me</h2>
-  <p class="me">
-    Hard working and reliable professional with 10+ years management experience. Quick to learn any skills needed, or necessary, to complete a job or task. I work well independently or as a team. I am Detail Oriented and an excellent problem solver. I have led my team to earn titles of <em>Regional All-Star 2018</em>, <em>Best Executed Team 2016 & 2017</em>, and <em>Best Customer Service Award 2016.</em>
-</p>
-  
+            <source src="Snow - 2509.mp4" type="video/mp4">
+        </video>
+ </h1>
 </section>
-<section id="Education">
-<h2>Education</h2>
-<div class="paragraph">
-  <ul>
-    <li>Associates Degree in <em>Computer Science</em>(In Process) - <a href="Snhu.edu">Southern New Hampshire University</a></li>
-    <img src="SNHU.JPG">
-    <br>
-    <li>Treehouse Coding Education - <a href="https://teamtreehouse.com/" >TeamTreehouse.com</a></li>
-    <img src="Capture.JPG"> 
-    <br>
-    <li>Wilderness First Responder - <a href="https://wildernessmedicine.com/">Wilderness Medicine Outfitters</a> </li>
-    <img src="WFR.JPG">
-    <br>
-    <li>Firearm Training and Certification - <a href="https://mylegalheat.com/">Utah Legal Heat</a></li>
-    <img src="ULH.JPG">
-  </ul>
-</div>
-</section class="paragraph">
+<section id="About-me">
+    <h2>About Me</h2>
+    <p class="me">
+      Hard working and reliable professional with 10+ years management experience. Quick to learn any skills needed, or necessary, to complete a job or task. I work well independently or as a team. I am Detail Oriented and an excellent problem solver. I have led my team to earn titles of <em>Regional All-Star 2018</em>, <em>Best Executed Team 2016 & 2017</em>, and <em>Best Customer Service Award 2016.</em>
+  </p>
+    
+  </section>
+  <section id="Education">
+  <h2>Education</h2>
+  <div class="paragraph">
+    <ul>
+      <li>Associates Degree in <em>Computer Science</em>(In Process) - <a href="Snhu.edu">Southern New Hampshire University</a></li>
+      <img class = "pictures" src="SNHU.JPG">
+      <br>
+      <li>Treehouse Coding Education - <a href="https://teamtreehouse.com/" >TeamTreehouse.com</a></li>
+      <img class = "pictures" src="Capture.JPG"> 
+      <br>
+      <li>Wilderness First Responder - <a href="https://wildernessmedicine.com/">Wilderness Medicine Outfitters</a> </li>
+      <img class = "pictures" src="WFR.JPG">
+      <br>
+      <li>Firearm Training and Certification - <a href="https://mylegalheat.com/">Utah Legal Heat</a></li>
+      <img class = "pictures" src="ULH.JPG">
+    </ul>
+  </div>
+</section>
 <section id="work history">
 <h2>Work History</h2>
 <p>
@@ -98,11 +116,14 @@
 <div class="contact">
   <ul>
 <li>Phone Number - (303)-803-3864 </li>
-<li>Email - <a mailto:TheHighTimberTaxidermist@gmail.com> TheHighTimberTaxidermist@gmail.com</a></li>
+<li>Email - <a mailto:thehightimbertaxidermist@gmail.com> TheHighTimberTaxidermist@gmail.com</a></li>
 <img id="mypic" src="me.jpg">
-</ul>
-</div>
+</ul></div>
 </section>
 
-  </body>
+
+        
+        <!-- JavaScript from bootstrap. again do not rely on bootstrap all the time -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body>
 </html>
