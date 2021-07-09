@@ -9,120 +9,185 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
         <!-- CSS only BootStrap (assuming that the bootstrap server is up, do not rely on bootstrap all the time) -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <!-- font awesome.. but not sure if ill use it -->
+        <script src="https://kit.fontawesome.com/8ff40362cd.js" crossorigin="anonymous"></script>
+        <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     </head>
     <body>
+      <!-- bootstrap nav bar for fully moble interactivity but i understand what makes a site moble and how to accomplish w/o bootstrap -->
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">MK</a>
+          <a class="navbar-brand brand " href="#">MK</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">About Me</a>
+                <a class="nav-link" aria-current="page" href="#about-me">About Me</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Education</a>
+                <a class="nav-link" href="#education">Education</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Work History</a>
+                <a class="nav-link" href="#work_history">Work History</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown link
+                  Favorite Sites
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li><a class="dropdown-item" href="https://github.com/">GitHub</a></li>
+                  <li><a class="dropdown-item" href="https://teamtreehouse.com/">Treehouse</a></li>
+                  <li><a class="dropdown-item" href="https://getbootstrap.com/">Bootstrap</a></li>
+                  <li><a class="dropdown-item" href="https://code.visualstudio.com/">VS Code</a></li>
+                  <li><a class="dropdown-item" href="https://www.udemy.com/">Udemy</a></li>
+                  <li><a class="dropdown-item" href="https://stackoverflow.com/">StackOverflow</a></li>
+                  <li><a class="dropdown-item" href="https://www.w3schools.com/">W3Schools</a></li>
+                  <li><a class="dropdown-item" href="https://developer.mozilla.org/en-US/">Mozilla Developer Network</a></li>
                 </ul>
               </li>
             </ul>
           </div>
         </div>
       </nav>
-<section>
+<section id="start">
 <h1 class="myname">Matthew
             <span class="sp">Krebs</span>
-    <video class="video-back" autoplay muted loop>
+            <video class="video-back" autoplay muted loop>
             <source src="Snow - 2509.mp4" type="video/mp4">
-        </video>
+            </video> 
  </h1>
 </section>
-<section id="About-me">
+<section id="about-me">
     <h2>About Me</h2>
     <p class="me">
+      <!-- this is a brief overview of who i am -->
       Hard working and reliable professional with 10+ years management experience. Quick to learn any skills needed, or necessary, to complete a job or task. I work well independently or as a team. I am Detail Oriented and an excellent problem solver. I have led my team to earn titles of <em>Regional All-Star 2018</em>, <em>Best Executed Team 2016 & 2017</em>, and <em>Best Customer Service Award 2016.</em>
   </p>
     
   </section>
-  <section id="Education">
+  <section id="education">
+<!-- my education section -->
   <h2>Education</h2>
-  <div class="paragraph">
-    <ul>
-      <li>Associates Degree in <em>Computer Science</em>(In Process) - <a href="Snhu.edu">Southern New Hampshire University</a></li>
-      <img class = "pictures" src="SNHU.JPG">
-      <br>
-      <li>Treehouse Coding Education - <a href="https://teamtreehouse.com/" >TeamTreehouse.com</a></li>
-      <img class = "pictures" src="Capture.JPG"> 
-      <br>
-      <li>Wilderness First Responder - <a href="https://wildernessmedicine.com/">Wilderness Medicine Outfitters</a> </li>
-      <img class = "pictures" src="WFR.JPG">
-      <br>
-      <li>Firearm Training and Certification - <a href="https://mylegalheat.com/">Utah Legal Heat</a></li>
-      <img class = "pictures" src="ULH.JPG">
-    </ul>
+    <div class="education1">
+      <div class="row">
+
+        <div class="work-box col-lg-6 ">
+          <img src="SNHU.JPG" class="work_img">
+          <h3>Associates Degree in <em>Computer Science</em></h3>
+          <p>2021-Current: In Progress (4.0 GPA to date) </p>
+        </div>
+      
+        <div class="work-box col-lg-6 ">
+          <img src="Capture.JPG" class="work_img">
+          <h3>TreeHouse Coding School</h3>
+          <p>Jan 2021: 30+ achievement (HTML, CSS, JavaScript, Python)</p>
+        </div>
+
+        <div class="work-box col-lg-6 ">
+          <img src="WFR.JPG" class="work_img">
+          <h3>Wilderness First Responder</h3>
+          <p>Wilderness Medicine Outfitters - Elizebeth, CO </p>
+        </div>
+
+        <div class="work-box col-lg-6 ">
+          <img src="ULH.JPG" class="work_img">
+          <h3>Utah Legal Heat</h3>
+          <p>Firearms Certification and Training: Including Weapon Handling and Safety Protocol</p>
+        </div>
+</div>
+</div>
+</section>
+<section id="work_history">
+  
+  <h2>Work History</h2>
+  <div class="work_history1">
+    <div class="row">
+
+    <div class="work-box col-lg-4 ">
+      <img src="WFM.JPG" class="work_image">
+      <h3>Whole Foods Market</h3>
+      <p>2007-Current: Meat Team Leader </p>
+      <button class="btn-1" href="https://www.wholefoodsmarket.com/">Whole Foods Market.com</button>
+    </div>
+
+  <div class="work-box col-lg-4">
+    <img src="HTT.JPG" class="work_image">
+    <h3>High Timber Taxidermy</h3>
+    <p>2018-Current: Owner/Taxidermist</p>
+    <button class="btn-1" href="https://imattk.github.io/HighTimber.github.io/">High Timber Taxidermy</button>
   </div>
-</section>
-<section id="work history">
-<h2>Work History</h2>
-<p>
-<ul class="paragraph"> 
-  <li> 2007 - Current - Whole Foods Market, Meat Team Leader - <a href="https://www.wholefoodsmarket.com/">WholeFoodsMarket.com</a></li>
-  <img src="WFM.JPG">
-  <br>
-  <li> 2018 - Current - High Timber Taxidermy, Taxidermist/Owner- <a href="https://imattk.github.io/HighTimber.github.io/">HighTimberTaxidermy</a></li>
-  <img src="HTT.JPG">
-  <br>
-  <li> 2015 - 2020 - Woods To Water Taxidermy, Taxidermist Assistant, European Mount Specialist, Product Finish Manager- <a href="https://www.facebook.com/mast72/">Woods To Water Facebook</a></li>
-  <img src="W2w.JPG">
-</ul>
 
-</p>
-
+  <div class="work-box col-lg-4">
+    <img src="W2w.JPG" class="work_image">
+    <h3>Woods To Water </h3>
+    <p>2015-2020: Assistant,Specialist, Product Finish Manager</p>
+    <button class="btn-1" href="https://www.facebook.com/mast72/">Woods To Water Taxidermy</button>
+  </div>
+    </div>
+      </div>
 </section>
+
 <section id="skills">
   <h2>Skills</h2>
+  <div class="row">
   <div class="skills">
-  <ul>
-    <li>Ability to work cooperatively as well as independently.</li>
-    <li>Practical ability to solve problems and devise procedures to increase effiency amd productivity.</li>
-    <li>Ability to Pay attention to detail and awareness of quality.</li>
-    <li>Management Experience including development and correction.</li>
-    <li>Coaching and Mentoring including training and ability to mentor in the moment.</li>
-    <li>Html.</li>
-    <li>Css.</li>
-    <li>Basic JavaScript</li>
-    <li>Basic Python</li>
-    <li>Knowledge of Computer Languages</li>
-    <img src="lang.JPG">
-  </ul>
+<!-- i put this section in div's instead of a ul to make it more responsive to moble -->
+    <div class="work-box col-lg">
+      <h3>Ability to work cooperatively as well as independently.</h3>
+    </div>
+    <div class="work-box col-lg">
+      <h3>Practical ability to solve problems and devise procedures to increase effiency amd productivity.</h3>
+      
+    </div><div class="work-box col-lg">
+      <h3>Ability to Pay attention to detail and awareness of quality.</h3>
+      
+    </div><div class="work-box col-lg">
+      <h3>Management Experience including development and correction.</h3>
+      
+    </div>
+  <div class="work-box col-lg">
+    <h3>Coaching and Mentoring including training and ability to mentor in the moment.</h3>
+    </div>
+  <div class="work-box col-lg">
+    <h3>- HTML -</h3>
+    </div>
+  <div class="work-box col-lg">
+    <h3>- CSS -</h3>
+    </div>
+  <div class="work-box col-lg">
+    <h3>- Basic JavaScript -</h3>
+    </div>
+    <hr>
+  <div class="work-box col-lg">
+    <h3>- Basic Python -</h3>
+    </div>
+    <hr>
+  <div class="work-box col-lg">
+    <h3>- Basic Knowledge of Computers and Computer Languages -</h3>
+    </div>
+  
+  <img class="img-fluid rounded mx-auto d-block" src="lang.JPG">
+  
+</div>
   </div>
 </section>
 <section  id="contact">
 <h2>Contact Info</h2>
-<div class="contact">
-  <ul>
-<li>Phone Number - (303)-803-3864 </li>
-<li>Email - <a mailto:thehightimbertaxidermist@gmail.com> TheHighTimberTaxidermist@gmail.com</a></li>
-<img id="mypic" src="me.jpg">
-</ul></div>
+<div class="row">
+  <div class="work-box col-lg">
+    <h3>Phone - (303)-803-3864</h3>
+    </div>
+    <div class="work-box col-lg">
+      <h3>Email - TheHighTImberTaxidermist@gmail.com </h3>
+      </div>
+<img src="me.JPG" class=" img-fluid rounded mx-auto d-block" alt="Picture Of Me!">
+</div>
 </section>
-
-
-        
+   
         <!-- JavaScript from bootstrap. again do not rely on bootstrap all the time -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     </body>
